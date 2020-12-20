@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 
 const GATEWAY_URL = "https://29v8wns725.execute-api.us-east-2.amazonaws.com/prod";
-const required = "This field is required";
 
 export default () => {
   const [submitted, setSubmitted] = useState(false);
@@ -12,7 +11,6 @@ export default () => {
     setError,
     errors,
     reset,
-    formState: { isSubmitting }
   } = useForm();
 
   const onSubmit = async data => {
@@ -57,8 +55,7 @@ export default () => {
           name="name"
           id="name"
           placeholder="Your name"
-          ref={register({ required })}
-          disabled={isSubmitting}
+          ref={register}
         />
         {errors.name && <div className="msg-error">{errors.name.message}</div>}
       </label>
@@ -70,8 +67,7 @@ export default () => {
           name="email"
           id="email"
           placeholder="your@email.address"
-          ref={register({ required })}
-          disabled={isSubmitting}
+          ref={register}
         />
         {errors.email && (
           <div className="msg-error">{errors.email.message}</div>
@@ -81,12 +77,11 @@ export default () => {
       <label htmlFor="question">
         <h5>Message</h5>
         <textarea
-          ref={register({ required })}
+          ref={register}
           name="question"
           id="question"
           rows="3"
           placeholder="Your message"
-          disabled={isSubmitting}
         />
         {errors.question && (
           <div className="msg-error">{errors.question.message}</div>
@@ -94,7 +89,7 @@ export default () => {
       </label>
 
       <div className="submit-wrapper">
-        <button type="submit" disabled={isSubmitting}>
+        <button type="submit">
           Send
         </button>
       </div>
