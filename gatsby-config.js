@@ -4,6 +4,7 @@ module.exports = {
   siteMetadata: {
     title: 'Endoscpe Repairs, Rentals, and Equipment | 3 West Medical',
     author: '3 West Medical',
+    siteUrl: 'https://3westmedical.com'
   },
   plugins: [
     {
