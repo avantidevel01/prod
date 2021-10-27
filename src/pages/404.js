@@ -8,18 +8,26 @@ const NotFound = () => {
   return (
     <Layout>
       <Head title='404 Page not found' />
-      <h1 className='text-3xl text-center'>Page not found</h1>
+      <div className='m-6'>
+        <h1 className='text-3xl font-semibold text-center'>Page not found</h1>
 
-      <div className='mr-16 md:w-full'>
-        <img src={Img404} alt='Repairing Endoscope' className=' ' />
+        <div className='my-8 flex w-full items-center  justify-center'>
+          <Link to='/'>
+            <img
+              src={Img404}
+              alt='Repairing Endoscope'
+              className='rounded-lg'
+            />
+          </Link>
+        </div>
+        <p className='text-xl text-center'>
+          <Link to='/'>In the meantime we will keep working on repairs...</Link>
+        </p>
+
+        <p className='text-xl text-center'>
+          <Link to='/'>Click here to go to the main page</Link>
+        </p>
       </div>
-      <p className='text-xl text-center'>
-        In the meantime we will keep working on repairs...
-      </p>
-
-      <p className='text-xl text-center'>
-        <Link to='/'>Click here to go to the main page</Link>
-      </p>
     </Layout>
   )
 }

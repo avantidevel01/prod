@@ -1,10 +1,23 @@
 import React from 'react'
 import Layout from '../components/layout'
 import Head from '../components/head'
-import Endo2 from '../images/s3.jpg'
+
 import Partners from '../components/partners'
+import { useStaticQuery, graphql } from 'gatsby'
+import Img from 'gatsby-image'
 
 const AboutPage = () => {
+  const data = useStaticQuery(graphql`
+    query {
+      endo2: file(relativePath: { eq: "s3.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 2500) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `)
   return (
     <div>
       <Layout>
@@ -17,10 +30,10 @@ const AboutPage = () => {
             100% Satisfaction Guaranteed
           </h2>
 
-          <img
-            src={Endo2}
-            alt='Flexible Endoscope'
+          <Img
             className=' h-40 w-full object-cover object-center md:h-full  rounded-md shadow-lg'
+            fluid={data.endo2.childImageSharp.fluid}
+            alt='Flexible Endoscope'
           />
 
           <p className='text-gray-800 leading-normal text-lg my-2 py-2'>

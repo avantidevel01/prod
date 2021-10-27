@@ -1,19 +1,31 @@
 import React from 'react'
 import Layout from '../components/layout'
 import Head from '../components/head'
-import Endo3 from '../images/slider-012.jpg'
 import RepairForm from '../components/repair-form'
+import { useStaticQuery, graphql } from 'gatsby'
+import Img from 'gatsby-image'
 
 const RepairsPage = () => {
+  const data = useStaticQuery(graphql`
+    query {
+      imgEleven: file(relativePath: { eq: "slider-012.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 640) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `)
   return (
     <div>
       <Layout>
         <Head title='Repairs' />
         <div className='h-40 w-full object-cover object-center md:h-full  rounded-md shadow-lg'>
-          <img
-            src={Endo3}
+          <Img
+            className='h-40 w-full object-cover object-center  rounded-md shadow-lg'
+            fluid={data.imgEleven.childImageSharp.fluid}
             alt='Flexible Endoscope being repaired'
-            className='h-40 w-full object-cover object-center  rounded-md shadow-lg '
           />
         </div>
         <div className='px-4 md:px-6'>
