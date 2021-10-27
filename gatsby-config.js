@@ -13,6 +13,17 @@ module.exports = {
         trackingId: 'UA-32238302-1',
       },
     },
+    {
+      resolve: `gatsby-plugin-sharp`,
+      options: {
+        base64Width: 20,
+        forceBase64Format: `png`,
+        useMozJpeg: process.env.GATSBY_JPEG_ENCODER === `MOZJPEG`,
+        stripMetadata: true,
+        defaultQuality: 70,
+        failOnError: true,
+      },
+    },
     'gatsby-plugin-sharp',
     {
       resolve: `gatsby-source-filesystem`,

@@ -22,7 +22,7 @@ const ProductsPage = () => {
 
           <h2 className='text-xl text-center font-bold pt-0 pb-8 text-red-800 leading-tight'>
             Call us today at{' '}
-            <a href='phone:(747) 444-9179' className='underline'>
+            <a href='tel:(747) 444-9179' className='underline'>
               (747) 444-9179
             </a>{' '}
             for more information!
