@@ -51,14 +51,14 @@ export default () => {
           Repair Order Form
         </div>
         <div className='text-center'>
-          <p className='py-2 px-6 text-gray-700 leading-normal text-lg'>
-            Fill out our Repair Order Form to schedule / receive an estimate.{' '}
-            <br />
-            We guarantee quality work with our parts & labor warranty policy.
+          <p className='md:py-2 md:px-6 text-gray-700 leading-normal text-lg'>
+            Fill out our Repair Order Form to schedule a repair or to receive a
+            free estimate. All repairs are guaranteed with our parts & labor
+            warranty policy.
           </p>
         </div>
         <div className=' w-full justify-center'>
-          <div className='bg-gray-300 m-6 p-4 border-2 border-blue-800 border-solid rounded-md shadow-lg '>
+          <div className='md:bg-gray-300 md:m-6 md:p-4 md:border-2 md:border-blue-800 md:border-solid md:rounded-md md:shadow-lg '>
             <div className=''>
               <form onSubmit={handleSubmit(onSubmit)} method='post'>
                 <div className='flex flex-col md:flex-row'>
@@ -295,7 +295,7 @@ export default () => {
                 <div className='submit-wrapper py-4'>
                   <button
                     type='submit'
-                    className='block md:h-full text-center hover:bg-green-700 shadow-lg text-white px-5 py-3 rounded-md bg-green-800 text-sm font-medium uppercase tracking-wide w-full active:bg-green-900'
+                    className='block md:h-full text-center hover:bg-green-800 shadow-lg text-white px-5 py-3 rounded-md bg-blue-800 text-sm font-medium uppercase tracking-wide w-full active:bg-green-900'
                   >
                     Submit
                   </button>
@@ -305,7 +305,7 @@ export default () => {
           </div>
         </div>
         <div className='text-center'>
-          <p className='py-2 px-6 text-gray-700 leading-normal text-lg'>
+          <p className='py-2 md:px-6 text-gray-700 leading-tight text-lg'>
             NOTE: Cosmetic issues, i.e., scratches, dents, discolorations, etc.,
             will not be recommended for repair unless those issue are causing an
             equipment system failure. If you would like cosmetic issues to be

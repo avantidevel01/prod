@@ -1,7 +1,8 @@
 import React from 'react'
 import Layout from '../components/layout'
 import Head from '../components/head'
-import Highlights from '../components/highlights'
+import Highlights from '../components/products-highlights'
+import Products from '../components/products'
 
 const ProductsPage = () => {
   return (
@@ -18,13 +19,16 @@ const ProductsPage = () => {
             to expand the scope of its product offerings and build on its
             position as a market leader in the area of endoscopy.
           </p>
-          <p className='text-gray-700 leading-normal text-lg my-2 py-2'>
-            With exciting products like Genii, the world's smallest, easiest,
-            does it all, argon capable GI generator, and Mavaprint, an image
-            management system that allows you to save patient information and
-            images with an intuitive touchscreen control panel, 3 West Medical
-            is an organization focused on the needs of its customers.
-          </p>
+
+          <h2 className='text-xl text-center font-bold pt-0 pb-8 text-red-800 leading-tight'>
+            Call us today at{' '}
+            <a href='phone:(747) 444-9179' className='underline'>
+              (747) 444-9179
+            </a>{' '}
+            for more information!
+          </h2>
+
+          <Products />
 
           <Highlights />
         </div>

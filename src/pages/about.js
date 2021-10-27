@@ -2,6 +2,7 @@ import React from 'react'
 import Layout from '../components/layout'
 import Head from '../components/head'
 import Endo2 from '../images/s3.jpg'
+import Partners from '../components/partners'
 
 const AboutPage = () => {
   return (
@@ -9,15 +10,25 @@ const AboutPage = () => {
       <Layout>
         <Head title='About' />
         <div className='px-6'>
-          <h1 className='text-2xl md:text-3xl font-bold py-4 text-gray-900 leading-tight'>
+          <h1 className='text-2xl md:text-3xl font-bold pt-4 pb-2 text-gray-900 leading-tight'>
             About 3 West Medical
           </h1>
+          <h2 className='text-xl font-bold pb-6 text-gray-800 leading-tight'>
+            100% Satisfaction Guaranteed
+          </h2>
 
           <img
             src={Endo2}
             alt='Flexible Endoscope'
             className=' h-40 w-full object-cover object-center md:h-full  rounded-md shadow-lg'
           />
+
+          <p className='text-gray-800 leading-normal text-lg my-2 py-2'>
+            If you’re doing Endoscopy or Surgery in Southern California, we’re
+            someone you want to know. As a growing and expanding company, we’re
+            always looking and working with partners who are on the cutting edge
+            of new Medical Technologies.
+          </p>
 
           <p className='text-gray-800 leading-normal text-lg my-2 py-2'>
             3 West Medical was founded over 15 years ago on the principles of
@@ -27,26 +38,16 @@ const AboutPage = () => {
           </p>
 
           <p className='text-gray-800 leading-normal text-lg my-2 py-2'>
-            All repairs are done by us at our state-of-the-art repair lab. Our
-            technicians have over 25 years experience in surgery and endoscopy
-            repairs and we pride ourselves on the fact that we are truly a
-            resource to the customers that we serve.
-          </p>
-
-          <p className='text-gray-800 leading-normal text-lg my-2 py-2'>
-            We know repair turnaround times are crucial to our customers and
-            make every effort to be as effective as possible. On average, minor
-            repairs take 1-3 days and major overhauls take 5-8 business days to
-            complete. Return shipment for all equipment is complementary and
-            included as part of our customer service commitment to you.
-          </p>
-
-          <p className='text-gray-800 leading-normal text-lg my-2 py-2'>
-            100% Satisfaction Guaranteed.
+            Whether your department is in Gastroenterology, Pulmonology,
+            Surgery, SPD or another Specialized Department involving Endoscopy,
+            we’re here for you to help solve any problem or situation you may
+            encounter. We will help you figure out how to attain more effective
+            and verifiable results with a focus on helping you provide “Best
+            Practice” in patient care available today.
           </p>
 
           <ul className='list-disc list-inside text-gray-800 leading-normal text-lg my-2 py-2'>
-            <li>Specializing in Both Large and Small Diameter Endoscopes</li>
+            <li>We Repair Large and Small Diameter Endoscopes</li>
             <li>Same Day Pick Up by 3 West Personnel</li>
             <li>Fast Turnaround Time</li>
             <li>Exceptional Customer Service</li>
@@ -54,6 +55,7 @@ const AboutPage = () => {
             <li>Free Loaner Program</li>
           </ul>
         </div>
+        <Partners />
       </Layout>
     </div>
   )

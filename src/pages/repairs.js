@@ -9,29 +9,29 @@ const RepairsPage = () => {
     <div>
       <Layout>
         <Head title='Repairs' />
-        <div className='px-6'>
+        <div className='h-40 w-full object-cover object-center md:h-full  rounded-md shadow-lg'>
+          <img
+            src={Endo3}
+            alt='Flexible Endoscope being repaired'
+            className='h-40 w-full object-cover object-center  rounded-md shadow-lg '
+          />
+        </div>
+        <div className='px-4 md:px-6'>
           <h1 className='text-2xl md:text-3xl font-bold py-4 text-gray-900 leading-tight'>
             Endoscope Repairs
           </h1>
           <div className=' flex flex-wrap md:flex-nowrap'>
-            <div className='h-40 w-full object-cover object-center md:h-full  rounded-md shadow-lg'>
-              <img
-                src={Endo3}
-                alt='Flexible Endoscope being repaired'
-                className='h-40 w-full object-cover object-center  rounded-md shadow-lg '
-              />
-            </div>
             <div className=''>
-              <h2 className='text-xl font-bold py-6 text-gray-800 leading-tight'>
+              <h2 className='text-xl font-bold py-6 text-red-800 leading-tight'>
                 Fill out the form below to receive a free estimate or to
                 schedule a repair.
               </h2>
 
               <p className='text-gray-700 leading-normal text-lg my-2 py-2'>
                 All repairs are done by us at our state-of-the-art repair lab.
-                Our technicians have over 25 years experience in surgery and
-                endoscopy repairs and we pride ourselves on the fact that we are
-                truly a resource to the customers that we serve.
+                Our technicians have over 25 years' experience in surgery and
+                endoscopy repairs, and we pride ourselves on the fact that we
+                are truly a resource to the customers that we serve.
               </p>
               <p className='text-gray-700 leading-normal text-lg my-2 py-2'>
                 We know repair turnaround times are crucial to our customers and
@@ -54,26 +54,26 @@ const RepairsPage = () => {
                     <li>Bending Rubbers</li>
                     <li>Insertion Tubes</li>
                     <li>Suction Channels</li>
-                    <li>Video Buttons</li>
                   </ul>
                 </div>
 
                 <div className='-mt-8 md:mt-0'>
                   <ul className='list-disc list-inside text-gray-800 leading-normal text-lg'>
+                    <li>Video Buttons</li>
                     <li>Light Guide Bundles</li>
                     <li>Light Guide Tubes</li>
                     <li>Rod Lens Replacement</li>
                     <li>Insertion Tube Replacement</li>
-                    <li>Objective System Replacement</li>
                   </ul>
                 </div>
 
                 <div className='-mt-8 md:mt-0'>
                   <ul className='list-disc list-inside text-gray-800 leading-normal text-lg '>
+                    <li>Objective System Replacement</li>
                     <li>Eye Cup Replacement</li>
                     <li>
-                      We also repair Off-Set Laparoscopes, Ureteroscopes and
-                      Small Joint Arthroscopes.
+                      Off-Set Laparoscopes, Ureteroscopes and Small Joint
+                      Arthroscopes.
                     </li>
                   </ul>
                 </div>

@@ -55,18 +55,39 @@ const Header = () => {
           </div>
 
           <div className='hidden  w-7/12 md:flex md:h-20 md:justify-between md:items-stretch '>
-            <div className='w-1/4 pt-2 mx-1 uppercase text-lg text-center mt-10 h-10 block align-center text-blue-800  font-semibold rounded hover:text-gray-100 hover:bg-blue-800'>
-              <Link to='/'>Home</Link>
-            </div>
-            <div className='w-1/4 pt-2 mx-1 uppercase text-lg text-center mt-10 h-10 block align-center text-blue-800  font-semibold rounded hover:text-gray-100 hover:bg-blue-800'>
-              <Link to='/repairs'>Repairs</Link>
-            </div>
-            <div className='w-1/4 pt-2 mx-1 uppercase text-lg text-center mt-10 h-10 block align-center text-blue-800  font-semibold rounded hover:text-gray-100 hover:bg-blue-800'>
-              <Link to='/products'>Products</Link>
-            </div>
-            <div className='w-1/4 pt-2 mx-1 uppercase text-lg text-center mt-10 h-10 block align-center text-blue-800  font-semibold rounded hover:text-gray-100 hover:bg-blue-800'>
-              <Link to='/about'>About</Link>
-            </div>
+            <Link
+              to='/'
+              className='w-1/4 pt-2 mx-1  mt-10 h-10  align-center text-blue-800 rounded hover:bg-blue-800'
+            >
+              <div className='uppercase text-lg text-center text-blue-800  font-semibold  hover:text-gray-100 '>
+                Home
+              </div>
+            </Link>
+
+            <Link
+              to='/repairs'
+              className='w-1/4 pt-2 mx-1  mt-10 h-10  align-center text-blue-800 rounded hover:bg-blue-800'
+            >
+              <div className='uppercase text-lg text-center text-blue-800  font-semibold  hover:text-gray-100 '>
+                Repairs
+              </div>
+            </Link>
+            <Link
+              to='/products'
+              className='w-1/4 pt-2 mx-1  mt-10 h-10  align-center text-blue-800 rounded hover:bg-blue-800'
+            >
+              <div className='uppercase text-lg text-center text-blue-800  font-semibold  hover:text-gray-100 '>
+                Products
+              </div>
+            </Link>
+            <Link
+              to='/about'
+              className='w-1/4 pt-2 mx-1  mt-10 h-10  align-center text-blue-800 rounded hover:bg-blue-800'
+            >
+              <div className='uppercase text-lg text-center text-blue-800  font-semibold  hover:text-gray-100 '>
+                About
+              </div>
+            </Link>
           </div>
 
           <div className='md:hidden'>

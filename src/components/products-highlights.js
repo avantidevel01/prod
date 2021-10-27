@@ -2,27 +2,84 @@ import React from 'react'
 import Dry2 from '../images/aid-cabinet-drying-system-dry-scope.jpg'
 import Dry1 from '../images/jet-stream-dry-scope.jpg'
 import Ensure1 from '../images/ensure-touch-hygiena.gif'
+import MediCapture from '../images/medi-capture.jpg'
+import MedBios from '../images/amilcare-biodisinfection.jpg'
 
 const Highlights = () => (
   <div>
-    <div className='bg-gray-400 rounded-lg shadow-lg mt-6 p-4 border-2 border-blue-800 border-solid'>
-      <div className='text-2xl font-bold px-6 py-4 text-gray-900 leading-tight'>
-        NEW PRODUCTS
-      </div>
+    <div className=''>
+      <h2 className='text-2xl font-bold pb-6 text-gray-800 leading-tight text-center'>
+        Complementary Products and Equipment
+      </h2>
+      <p className='text-gray-700 leading-normal text-lg my-2 py-2'>
+        With exciting products like Genii, the world's smallest, easiest, does
+        it all, argon capable GI generator, and Mavaprint, an image management
+        system that allows you to save patient information and images with an
+        intuitive touchscreen control panel, 3 West Medical is an organization
+        focused on the needs of its customers.
+      </p>
       <div className=' w-full justify-center'>
+        <div className='bg-gray-100 m-6 p-4 border-2 border-blue-800 border-solid rounded-md shadow-lg'>
+          <h2 className='text-xl font-bold mb-5 text-gray-800 leading-tight'>
+            Medi Capture - MVR Pro
+          </h2>
+          <div className='flex flex-col md:flex-row w-auto m-3'>
+            <div className='mr-8 md:w-1/3'>
+              <img
+                src={MediCapture}
+                alt='Medi Capture MVR Pro'
+                className='rounded-md  md:mr-4 '
+              />
+            </div>
+            <div className='md:w-2/3'>
+              <p className='text-gray-800 leading-normal text-lg my-2 py-2'>
+                The MVR Pro is an Image Management Device that Captures Still
+                images and Video with Storage while acting as a small monitor.
+                It also works with off the shelf wireless printers which saves
+                the you money.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className='bg-gray-100 m-6 p-4 border-2 border-blue-800 border-solid rounded-md shadow-lg'>
+          <h2 className='text-xl font-bold mb-5 text-gray-800 leading-tight'>
+            MedBios Micronebulizer by AMILcare
+          </h2>
+          <div className='flex flex-col md:flex-row w-auto m-3'>
+            <div className='mr-8 md:w-1/3'>
+              <img
+                src={MedBios}
+                alt='AmilCare MedBios Micronebulizer'
+                className='rounded-md  md:mr-4 '
+              />
+            </div>
+            <div className='md:w-2/3'>
+              <p className='text-gray-800 leading-normal text-lg my-2 py-2'>
+                The Medbios device is a micronebulizer of new generation,
+                practical, manageable, and technologically advanced for
+                biodisinfection. It is a class I Medical Device. It was designed
+                for use in various hospital departments. All configuration
+                settings for treatments are performed with a display and
+                keyboard.
+              </p>
+            </div>
+          </div>
+        </div>
+
         <div className='bg-gray-100 m-6 p-4 border-2 border-blue-800 border-solid rounded-md shadow-lg'>
           <h2 className='text-xl font-bold mb-5 text-gray-800 leading-tight'>
             Dry-Scope Aid® Jet~Stream
           </h2>
           <div className='flex flex-col md:flex-row w-auto m-3'>
-            <div className='mr-8 w-1/3'>
+            <div className='mr-8 md:w-1/3'>
               <img
                 src={Dry1}
                 alt='Dry-Scope Aid Jet-Stream Machine'
-                className='rounded-md  mr-4 '
+                className='rounded-md  md:mr-4 '
               />
             </div>
-            <div className='w-2/3'>
+            <div className='md:w-2/3'>
               <p className='text-gray-800 leading-normal text-lg my-2 py-2'>
                 Dri-Scope Aid® Jet~Stream is designed to assist in the drying of
                 the internal channels of an endoscope. The internal chan-nels
@@ -34,19 +91,20 @@ const Highlights = () => (
             </div>
           </div>
         </div>
+
         <div className='bg-gray-100 m-6 p-4 border-2 border-blue-800 border-solid rounded-md shadow-lg '>
           <h2 className='text-xl font-bold mb-5 text-gray-800 leading-tight'>
             Dry-Scope Aid® Cabinet
           </h2>
           <div className='flex flex-col md:flex-row w-auto m-3'>
-            <div className='mr-8 w-1/3'>
+            <div className='mr-8 w-1/3 md:w-1/4'>
               <img
                 src={Dry2}
                 alt='Dry-Scope Aid Cabinet'
-                className=' rounded-md  mr-4'
+                className=' rounded-md  md:mr-4'
               />
             </div>
-            <div className='w-2/3'>
+            <div className='md:w-2/3'>
               <p className='text-gray-800 leading-normal text-lg my-2 py-2'>
                 The Dri-Scope Aid® Cabinet supplies HEPA-filtered air to all
                 internal channels to aid in drying endoscopes with an auto-mated
@@ -71,7 +129,7 @@ const Highlights = () => (
                 className='rounded-md  mr-4'
               />
             </div>
-            <div className='w-2/3'>
+            <div className='md:w-2/3'>
               <p className='text-gray-800 leading-normal text-lg my-2 py-2'>
                 Hygiena understands patient health and maximizing insurance
                 reimbursements are essential to your business. Your success
