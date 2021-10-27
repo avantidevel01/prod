@@ -11,7 +11,7 @@ const AboutPage = () => {
     query {
       endo2: file(relativePath: { eq: "s3.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 2500) {
+          fluid(maxWidth: 950) {
             ...GatsbyImageSharpFluid
           }
         }

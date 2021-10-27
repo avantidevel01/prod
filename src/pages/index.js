@@ -2,7 +2,6 @@ import React from 'react'
 import { Link } from 'gatsby'
 import Layout from '../components/layout'
 import Head from '../components/head'
-
 import RepairForm from '../components/repair-form'
 import { useStaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
@@ -12,7 +11,7 @@ const IndexPage = () => {
     query {
       endoScope1: file(relativePath: { eq: "s4.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 2500) {
+          fluid(maxWidth: 650) {
             ...GatsbyImageSharpFluid
           }
         }
