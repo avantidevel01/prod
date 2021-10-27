@@ -180,7 +180,7 @@ export default () => {
                         type='text'
                         name='city'
                         id='city'
-                        placeholder='City'
+                        placeholder='1234 Main St.'
                         ref={register}
                         className='mt-1 p-2 block w-full border-gray-500 rounded border-2'
                       />
@@ -196,7 +196,7 @@ export default () => {
                         type='text'
                         name='state'
                         id='state'
-                        placeholder='State'
+                        placeholder='Suite 123'
                         ref={register}
                         className='mt-1 p-2 block w-full border-gray-500 rounded border-2'
                       />
@@ -212,7 +212,7 @@ export default () => {
                         type='text'
                         name='zip'
                         id='zip'
-                        placeholder='Zip Code'
+                        placeholder='Suite 123'
                         ref={register}
                         className='mt-1 p-2 block w-full border-gray-500 rounded border-2'
                       />
@@ -242,7 +242,7 @@ export default () => {
                 <div className='flex flex-col md:flex-row'>
                   <div className='mt-4 md:mr-4 md:w-1/2'>
                     <label htmlFor='mod1desc'>
-                      <h5 className='text-gray-700'>Endoscope Model</h5>
+                      <h5 className='text-gray-700'>1. Endoscope Model</h5>
                       <input
                         type='text'
                         name='mod1'
@@ -275,7 +275,78 @@ export default () => {
                     </label>
                   </div>
                 </div>
-
+                <div className='flex flex-col md:flex-row'>
+                  <div className='mt-4 md:mr-4 md:w-1/2'>
+                    <label htmlFor='mod2desc'>
+                      <h5 className='text-gray-700'>2. Endoscope Model</h5>
+                      <input
+                        type='text'
+                        name='mod2'
+                        id='mod2'
+                        placeholder='Endoscope Model'
+                        ref={register}
+                        className='mt-1 p-2 block w-full border-gray-500 rounded border-2'
+                      />
+                      {errors.name && (
+                        <div className='msg-error'>{errors.mod2.message}</div>
+                      )}
+                    </label>
+                  </div>
+                  <div className='mt-4  md:w-1/2'>
+                    <label htmlFor='mod1desc'>
+                      <h5 className='text-gray-700'>Description of Problem</h5>
+                      <input
+                        type='text'
+                        name='mod2desc'
+                        id='mod2desc'
+                        placeholder='Description of Problem'
+                        ref={register}
+                        className='mt-1 p-2 block w-full border-gray-500 rounded border-2'
+                      />
+                      {errors.name && (
+                        <div className='msg-error'>
+                          {errors.mod2desc.message}
+                        </div>
+                      )}
+                    </label>
+                  </div>
+                </div>
+                <div className='flex flex-col md:flex-row'>
+                  <div className='mt-4 md:mr-4 md:w-1/2'>
+                    <label htmlFor='mod1desc'>
+                      <h5 className='text-gray-700'>3. Endoscope Model</h5>
+                      <input
+                        type='text'
+                        name='mod3'
+                        id='mod3'
+                        placeholder='Endoscope Model'
+                        ref={register}
+                        className='mt-1 p-2 block w-full border-gray-500 rounded border-2'
+                      />
+                      {errors.name && (
+                        <div className='msg-error'>{errors.mod3.message}</div>
+                      )}
+                    </label>
+                  </div>
+                  <div className='mt-4  md:w-1/2'>
+                    <label htmlFor='mod3desc'>
+                      <h5 className='text-gray-700'>Description of Problem</h5>
+                      <input
+                        type='text'
+                        name='mod3desc'
+                        id='mod3desc'
+                        placeholder='Description of Problem'
+                        ref={register}
+                        className='mt-1 p-2 block w-full border-gray-500 rounded border-2'
+                      />
+                      {errors.name && (
+                        <div className='msg-error'>
+                          {errors.mod3desc.message}
+                        </div>
+                      )}
+                    </label>
+                  </div>
+                </div>
                 <div className='mt-4'>
                   <label htmlFor='question'>
                     <h5 className='text-gray-700'>Additional Information</h5>
