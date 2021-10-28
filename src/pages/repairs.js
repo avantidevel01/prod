@@ -20,7 +20,7 @@ const RepairsPage = () => {
   return (
     <div>
       <Layout>
-        <Head title='Repairs' />
+        <Head title='Endoscope Repairs' />
         <div className='h-40 w-full object-cover object-center md:h-full  rounded-md shadow-lg'>
           <Img
             className='h-40 w-full object-cover object-center  rounded-md shadow-lg'
@@ -30,15 +30,15 @@ const RepairsPage = () => {
         </div>
         <div className='px-4 md:px-6'>
           <h1 className='text-2xl md:text-3xl font-bold py-4 text-gray-900 leading-tight'>
-            Endoscope Repairs
+            Flexible and Rigid Endoscope Repairs
           </h1>
+
+          <h2 className='text-xl font-bold py-6 text-green-800 leading-tight'>
+            Fill out the form below to receive a free estimate or to schedule a
+            repair.
+          </h2>
           <div className=' flex flex-wrap md:flex-nowrap'>
             <div className=''>
-              <h2 className='text-xl font-bold py-6 text-red-800 leading-tight'>
-                Fill out the form below to receive a free estimate or to
-                schedule a repair.
-              </h2>
-
               <p className='text-gray-700 leading-normal text-lg my-2 py-2'>
                 All repairs are done by us at our state-of-the-art repair lab.
                 Our technicians have over 25 years' experience in surgery and
@@ -54,8 +54,9 @@ const RepairsPage = () => {
                 commitment to you.
               </p>
 
-              <p className='text-gray-700 leading-normal text-lg my-2 py-2'>
-                Here are some of the repairs we perform:
+              <p className='text-gray-700 font-semibold leading-normal text-lg my-2 py-2'>
+                These are some of the repairs we perform on flexible and rigid
+                endoscopes:
               </p>
               <div className='grid grid-cols-1 md:grid-cols-3 gap-8'>
                 <div>

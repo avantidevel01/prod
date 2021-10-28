@@ -35,7 +35,16 @@ const Highlights = () => {
           }
         }
       }
-      ensure: file(relativePath: { eq: "ensure-touch.jpg" }) {
+      steriview: file(
+        relativePath: { eq: "steriview-instrument-inspection.jpg" }
+      ) {
+        childImageSharp {
+          fluid(maxWidth: 400) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      desertcabinets: file(relativePath: { eq: "desert-air-cabinets.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 400) {
             ...GatsbyImageSharpFluid
@@ -47,16 +56,9 @@ const Highlights = () => {
   return (
     <div>
       <div className=''>
-        <h2 className='text-2xl font-bold pb-6 text-gray-800 leading-tight text-center'>
+        <h2 className='text-2xl font-bold pb-6 text-gray-800 leading-tight '>
           Complementary Products and Equipment
         </h2>
-        <p className='text-gray-700 leading-normal text-lg my-2 py-2'>
-          With exciting products like Genii, the world's smallest, easiest, does
-          it all, argon capable GI generator, and Mavaprint, an image management
-          system that allows you to save patient information and images with an
-          intuitive touchscreen control panel, 3 West Medical is an organization
-          focused on the needs of its customers.
-        </p>
         <div className=' w-full justify-center'>
           <div className='bg-gray-100 m-6 p-4 border-2 border-blue-800 border-solid rounded-md shadow-lg'>
             <h2 className='text-xl font-bold mb-5 text-gray-800 leading-tight'>
@@ -131,6 +133,35 @@ const Highlights = () => {
             </div>
           </div>
 
+          <div className='bg-gray-100 m-6 p-4 border-2 border-blue-800 border-solid rounded-md shadow-lg'>
+            <h2 className='text-xl font-bold mb-5 text-gray-800 leading-tight'>
+              Desert Air Drying Cabinets
+            </h2>
+            <div className='flex flex-col md:flex-row w-auto m-3'>
+              <div className='mr-8 md:w-1/3'>
+                <Img
+                  className='md:mr-4 rounded-lg'
+                  fluid={data.desertcabinets.childImageSharp.fluid}
+                  alt='Desert Air Drying Cabinet'
+                />
+              </div>
+              <div className='md:w-2/3'>
+                <p className='text-gray-800 leading-normal text-lg my-2 py-2'>
+                  DesertAir Drying Cabinets were designed from scratch to
+                  satisfy current industry recommendations for the drying and
+                  storage of heat-sensitive medical instruments. DesertAir
+                  combines the superior quality and durability of stainless
+                  steel components, unparalleled workmanship and construction
+                  with the time-tested performance of the Dri-Scope Aid™ channel
+                  drying system – arguably the most recognized name in the
+                  channel drying business. Together, they represent a new high
+                  water mark in dual HEPA-filtered drying and storage
+                  capability.
+                </p>
+              </div>
+            </div>
+          </div>
+
           <div className='bg-gray-100 m-6 p-4 border-2 border-blue-800 border-solid rounded-md shadow-lg '>
             <h2 className='text-xl font-bold mb-5 text-gray-800 leading-tight'>
               Dry-Scope Aid® Cabinet
@@ -162,27 +193,22 @@ const Highlights = () => {
               EnSURE Touch by Hygiena
             </h2>
             <div className='flex flex-col md:flex-row w-auto m-3'>
-              <div className='mr-8 w-1/3'>
+              <div className='mr-8 md:w-1/3'>
                 <Img
                   className='md:mr-4 rounded-lg'
-                  fluid={data.ensure.childImageSharp.fluid}
+                  fluid={data.steriview.childImageSharp.fluid}
                   alt='EnSURE Touch by Hygiena'
                 />
               </div>
               <div className='md:w-2/3'>
                 <p className='text-gray-800 leading-normal text-lg my-2 py-2'>
-                  Hygiena understands patient health and maximizing insurance
-                  reimbursements are essential to your business. Your success
-                  depends on the cleanliness of your facility. Published
-                  research shows that even with best efforts put forward, on
-                  average, only 34-40% of hospital surfaces are actually cleaned
-                  to policy standards. Your constant battle against C.
-                  difficile, MRSA, and other healthcare-associated infections
-                  require a proven and effective cleaning verification program.
-                  Implementing a monitoring system improves cleaning
-                  thoroughness from 40% to 82%1. The EnSURE Touch provides you
-                  with the data you need to ensure patient health and maximize
-                  insurance reimbursements.
+                  SteriView™ Inspection System is designed to inspect the
+                  internal channels of endoscopes and surgical devices to assist
+                  in the visualization of any soiled, wet, or damaged areas that
+                  the eye can’t see. The internal channels are an ideal
+                  environment for colonization of bacteria. It is for this
+                  reason, SGNA, AAMI, AORN and manufacturers IFU’s all state
+                  that scopes must be inspected prior to use.
                 </p>
               </div>
             </div>
