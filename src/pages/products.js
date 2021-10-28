@@ -8,7 +8,7 @@ const ProductsPage = () => {
   return (
     <div>
       <Layout>
-        <Head title='Refurbished Flexible, Rigid Endoscopes for Sale' />
+        <Head title='Refurbished Flexible and Rigid Endoscopes for Sale' />
         <div className='px-6'>
           <h1 className='text-2xl md:text-3xl font-bold py-4 text-gray-900 leading-tight'>
             Flexible, Rigid Endoscopes & Complementary Products
