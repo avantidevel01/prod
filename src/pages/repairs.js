@@ -35,23 +35,25 @@ const RepairsPage = () => {
 
           <h2 className='text-xl font-bold py-6 text-green-800 leading-tight'>
             Fill out the form below to receive a free estimate or to schedule a
-            repair.
+            repair. <br />
+            All repairs are done by us at our state-of-the-art repair lab.
           </h2>
           <div className=' flex flex-wrap md:flex-nowrap'>
             <div className=''>
               <p className='text-gray-700 leading-normal text-lg my-2 py-2'>
-                All repairs are done by us at our state-of-the-art repair lab.
-                Our technicians have over 25 years' experience in surgery and
-                endoscopy repairs, and we pride ourselves on the fact that we
-                are truly a resource to the customers that we serve.
+                Our technicians are professionally trained and have on average
+                25 years of experience in the industry. All equipment is
+                calibrated and tested to meet the manufacturer's specifications,
+                and we pride ourselves on the fact that we are truly a resource
+                to the customers that we serve.
               </p>
+
               <p className='text-gray-700 leading-normal text-lg my-2 py-2'>
-                We know repair turnaround times are crucial to our customers and
-                make every effort to be as effective as possible. On average,
-                minor repairs take 1-3 days and major overhauls take 5-7
-                business days to complete. Return shipment for all equipment is
-                complementary and included as part of our customer service
-                commitment to you.
+                Repair turnaround times are crucial to our customers and we make
+                every effort to be as effective as possible. On average, minor
+                repairs take 1-3 days and major overhauls take 5-7 business days
+                to complete. Return shipment for all equipment is complementary
+                and included as part of our customer service commitment to you.
               </p>
 
               <p className='text-gray-700 font-semibold leading-normal text-lg my-2 py-2'>

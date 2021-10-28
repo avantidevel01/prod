@@ -33,21 +33,20 @@ const IndexPage = () => {
                   alt='Flexible Endoscope'
                 />
               </div>
-              <h1 className='text-3xl font-bold mt-2 py-4 text-gray-900 leading-tight'>
-                We fix endoscopes.
+              <h1 className='text-3xl font-bold mt-2 py-4 text-gray-900 leading-normal'>
+                <span className='text-blue-800 text-4xl'>
+                  We fix endoscopes.
+                </span>
                 <br />
                 We sell refurbished.
               </h1>
 
-              <p className='py-2 mr-6 text-gray-700 leading-normal text-lg'>
-                3 West Medical is your #1 source for endoscope repair and
-                refurbished equipment in Los Angeles.
-              </p>
-              <p className='py-2 mr-6 text-gray-700 leading-normal text-lg'>
-                Our technicians are professionally trained and have on average
-                25 years of experience in the industry. All equipment is
-                calibrated and tested to meet the manufacturer's specifications.
-              </p>
+              <h2 className='text-xl  font-bold  pt-3 pb-4 text-gray-700 leading-tight'>
+                3 West Medical is your #1 source for endoscope repair,
+                refurbished endoscopes, and complementary equipment in Los
+                Angeles.
+              </h2>
+
               <p className='py-2  text-gray-700 leading-normal font-bold text-lg'>
                 100% Satisfaction Guaranteed.
               </p>

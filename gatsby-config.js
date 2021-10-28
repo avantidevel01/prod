@@ -11,20 +11,20 @@ module.exports = {
       'Specializing in Endoscope Repair and Refurbished Endoscope Sales in the Area of Los Angeles.',
   },
   plugins: [
+    `gatsby-plugin-postcss`,
+
+    {
+      resolve: 'gatsby-plugin-google-analytics',
+      options: {
+        trackingId: 'UA-32238302-1',
+      },
+    },
     {
       resolve: `gatsby-plugin-robots-txt`,
       options: {
         host: 'https://3westmedical.com',
         sitemap: 'https://3westmedical.com/sitemap.xml',
         policy: [{ userAgent: '*', allow: '/' }],
-      },
-    },
-    `gatsby-plugin-postcss`,
-    `gatsby-plugin-react-helmet`,
-    {
-      resolve: 'gatsby-plugin-google-analytics',
-      options: {
-        trackingId: 'UA-32238302-1',
       },
     },
     {
@@ -38,20 +38,8 @@ module.exports = {
         failOnError: true,
       },
     },
-
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: 'images',
-        path: './src/images/',
-      },
-      __key: 'images',
-    },
-
-    'gatsby-plugin-sitemap',
-    'gatsby-plugin-offline',
-    'gatsby-transformer-sharp',
-    'gatsby-plugin-sharp',
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -62,8 +50,10 @@ module.exports = {
         icon: `./src/images/icon.png`,
       },
     },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: `gatsby-source-filesystem`,
       options: {
         name: 'images',
         path: './src/images/',
@@ -71,34 +61,12 @@ module.exports = {
       __key: 'images',
     },
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: `gatsby-source-filesystem`,
       options: {
         name: 'pages',
         path: './src/pages/',
       },
       __key: 'pages',
-    },
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        name: 'src',
-        path: `${__dirname}/src/`,
-      },
-    },
-
-    {
-      resolve: 'gatsby-transformer-remark',
-      options: {
-        plugins: [
-          {
-            resolve: 'gatsby-remark-images',
-            options: {
-              maxWidth: 750,
-              linkImagesToOriginal: false,
-            },
-          },
-        ],
-      },
     },
   ],
 }
