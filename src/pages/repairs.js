@@ -20,7 +20,7 @@ const RepairsPage = () => {
   return (
     <div>
       <Layout>
-        <Head title='Endoscope Repairs' />
+        <Head title='Flexible and Rigid Endoscope Repairs in Los Angeles' />
         <div className='h-40 w-full object-cover object-center md:h-full  rounded-md shadow-lg'>
           <Img
             className='h-40 w-full object-cover object-center  rounded-md shadow-lg'
@@ -29,15 +29,25 @@ const RepairsPage = () => {
           />
         </div>
         <div className='px-4 md:px-6'>
-          <h1 className='text-2xl md:text-3xl font-bold py-4 text-gray-900 leading-tight'>
+          <h1 className='text-2xl md:text-3xl font-bold mt-8 py-2 text-gray-900 leading-tight'>
             Flexible and Rigid Endoscope Repairs
           </h1>
 
-          <h2 className='text-xl font-bold py-6 text-green-800 leading-tight'>
-            Fill out the form below to receive a free estimate or to schedule a
-            repair. <br />
-            All repairs are done by us at our state-of-the-art repair lab.
+          <h2 className='text-xl font-semibold py-2 text-blue-800 leading-tight'>
+            All repairs are performed by our technicians at our state-of-the-art
+            repair lab
           </h2>
+          <h3 className='text-lg italic pt-0 text-gray-700 leading-tight'>
+            Fill out our{' '}
+            <a
+              href='#repair-order-form'
+              className='underline hover:bg-gray-500 hover:text-gray-50'
+            >
+              repair form
+            </a>{' '}
+            to get a free estimate or schedule a repair
+          </h3>
+
           <div className=' flex flex-wrap md:flex-nowrap'>
             <div className=''>
               <p className='text-gray-700 leading-normal text-lg my-2 py-2'>

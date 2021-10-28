@@ -55,8 +55,8 @@ const AboutPage = () => {
             Surgery, SPD or another Specialized Department involving Endoscopy,
             we’re here for you to help solve any problem or situation you may
             encounter. We will help you figure out how to attain more effective
-            and verifiable results with a focus on helping you provide “Best
-            Practice” in patient care available today.
+            and verifiable results with a focus on helping you provide "best
+            practice" in patient care available today.
           </p>
 
           <ul className='list-disc list-inside text-gray-800 leading-normal text-lg my-2 py-2'>

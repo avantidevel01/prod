@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { useForm } from 'react-hook-form'
 
 const GATEWAY_URL =
-  'https://29v8wns725.execute-api.us-east-2.amazonaws.com/prod'
+  'https://d649gmqx4h.execute-api.us-east-2.amazonaws.com/prod'
 
 export default () => {
   const [submitted, setSubmitted] = useState(false)
@@ -33,19 +33,25 @@ export default () => {
   const showSubmitError = (msg) => <p className='msg-error'>{msg}</p>
 
   const showThankYou = (
-    <div className='msg-confirm'>
-      <p>
-        Thank you for your Inquiry! Your message was sent and you will be
-        hearing from our staff shortly.
-      </p>
-      <button type='button' onClick={() => setSubmitted(false)}>
-        Clear Form
-      </button>
+    <div className='absolute top-0 mt-56'>
+      <div className=' bg-green-800 text-gray-100 font-semibold rounded-lg text-center m-20'>
+        <p className='px-10 pt-10 pb-5'>
+          Thank you for your Inquiry! Your message was sent and you will be
+          hearing from our staff shortly.
+        </p>
+        <button
+          type='button'
+          className=' items-center justify-center hover:bg-gray-500 text-gray-800  p-2 mb-10 rounded-md bg-gray-200 border-2 boder-solid border-gray-500 md:text-xl text-lg font-medium uppercase tracking-wide w-1/4 active:bg-blue-900'
+          onClick={() => setSubmitted(false)}
+        >
+          Clear Form
+        </button>
+      </div>
     </div>
   )
 
   const showForm = (
-    <div>
+    <div id='repair-order-form'>
       <div className='bg-gray-400 rounded-lg shadow-lg my-6  p-4 border-2 border-blue-800 border-solid'>
         <div className='text-2xl text-center font-bold px-6 py-4 text-gray-900 leading-tight'>
           Repair Order Form
@@ -63,81 +69,120 @@ export default () => {
               <form onSubmit={handleSubmit(onSubmit)} method='post'>
                 <div className='flex flex-col md:flex-row'>
                   <div className='mt-4 md:mr-4 md:w-1/2'>
-                    <label htmlFor='bname'>
-                      <h5 className='text-gray-700'>Business Name</h5>
-                      <input
-                        type='text'
-                        name='bname'
-                        id='bname'
-                        placeholder='Business Name'
-                        ref={register}
-                        className='mt-1 p-2 block w-full border-gray-500 rounded border-2'
-                      />
-                      {errors.name && (
-                        <div className='msg-error'>{errors.name.message}</div>
-                      )}
-                    </label>
-                  </div>
-                  <div className='mt-4  md:w-1/2'>
-                    <label htmlFor='department'>
-                      <h5 className='text-gray-700'>Department</h5>
-                      <input
-                        type='text'
-                        name='department'
-                        id='department'
-                        placeholder='Department'
-                        ref={register}
-                        className='mt-1 p-2 block w-full border-gray-500 rounded border-2'
-                      />
-                      {errors.name && (
-                        <div className='msg-error'>{errors.name.message}</div>
-                      )}
-                    </label>
-                  </div>
-                </div>
-                <div className='flex flex-col md:flex-row'>
-                  <div className='mt-4 md:mr-4 md:w-1/2'>
-                    <label htmlFor='fname'>
-                      <h5 className='text-gray-700'>
-                        First Name{' '}
-                        <span className=' text-xs italic  text-gray-500'>
-                          (Required)
-                        </span>
-                      </h5>
+                    <label htmlFor='fname' className='text-gray-700'>
+                      First Name
+                      <span className='text-xs italic text-gray-500 pl-1'>
+                        (Required)
+                      </span>
                       <input
                         type='text'
                         name='fname'
                         id='fname'
                         placeholder='First Name'
-                        ref={register}
+                        ref={register({ required: true, maxLength: 200 })}
                         className='mt-1 p-2 block w-full border-gray-500 rounded border-2'
                       />
-                      {errors.name && (
-                        <div className='msg-error'>{errors.name.message}</div>
+                      {errors.fname && (
+                        <p className='text-red-600 font-medium italic ml-2'>
+                          First Name is required
+                        </p>
                       )}
                     </label>
                   </div>
                   <div className='mt-4  md:w-1/2'>
-                    <label htmlFor='lname'>
-                      <h5 className='text-gray-700'>Last Name</h5>
+                    <label htmlFor='lname' className='text-gray-700 '>
+                      Last Name
+                      <span className='text-xs italic text-gray-500 pl-1'>
+                        (Required)
+                      </span>
                       <input
                         type='text'
                         name='lname'
                         id='lname'
                         placeholder='Last Name'
-                        ref={register}
+                        ref={register({ required: true, maxLength: 200 })}
                         className='mt-1 p-2 block w-full border-gray-500 rounded border-2'
                       />
-                      {errors.name && (
-                        <div className='msg-error'>{errors.name.message}</div>
+                      {errors.lname && (
+                        <p className=' text-red-600 font-medium italic ml-2'>
+                          Last Name is required
+                        </p>
                       )}
                     </label>
                   </div>
                 </div>
+
                 <div className='flex flex-col md:flex-row'>
                   <div className='mt-4 md:mr-4 md:w-1/2'>
-                    <label htmlFor='address'>
-                      <h5 className='text-gray-700'>Business Address</h5>
+                    <label htmlFor='email' className='text-gray-700'>
+                      Email
+                      <span className='text-xs italic text-gray-500 pl-1'>
+                        (Required)
+                      </span>
+                      <input
+                        type='email'
+                        name='email'
+                        id='email'
+                        placeholder='your@email.address'
+                        ref={register({
+                          required: true,
+                          pattern: /^\S+@\S+$/i,
+                        })}
+                        className='mt-1 p-2 block w-full border-gray-500 rounded border-2'
+                      />
+                      {errors.email && (
+                        <p className='text-red-600 font-medium italic ml-2'>
+                          Email Address is required
+                        </p>
+                      )}
+                    </label>
+                  </div>
+                  <div className='mt-4  md:w-1/2'>
+                    <label htmlFor='phone' className='text-gray-700'>
+                      Phone Number
+                      <span className='text-xs italic text-gray-500 pl-1'>
+                        (Required)
+                      </span>
+                      <input
+                        type='text'
+                        name='phone'
+                        id='phone'
+                        placeholder='(123) 456-7890'
+                        ref={register({
+                          required: true,
+                          minLength: 6,
+                          maxLength: 12,
+                        })}
+                        className='mt-1 p-2 block w-full border-gray-500 rounded border-2'
+                      />
+                      {errors.phone && (
+                        <p className=' text-red-600 font-medium italic ml-2'>
+                          Phone Number is required
+                        </p>
+                      )}
+                    </label>
+                  </div>
+                </div>
+                <div className='mt-4'>
+                  <label htmlFor='bname' className='text-gray-700'>
+                    Business Name
+                    <input
+                      type='text'
+                      name='bname'
+                      id='bname'
+                      placeholder='Business Name'
+                      ref={register}
+                      className='mt-1 p-2 block w-full border-gray-500 rounded border-2'
+                    />
+                    {errors.bname && (
+                      <div className='msg-error'>{errors.bname.message}</div>
+                    )}
+                  </label>
+                </div>
+                <div className='flex flex-col md:flex-row'>
+                  <div className='mt-4 md:mr-4 md:w-1/2'>
+                    <label htmlFor='address' className='text-gray-700'>
+                      Business Address
                       <input
                         type='text'
                         name='address'
@@ -146,36 +191,16 @@ export default () => {
                         ref={register}
                         className='mt-1 p-2 block w-full border-gray-500 rounded border-2'
                       />
-                      {errors.name && (
+                      {errors.address && (
                         <div className='msg-error'>
                           {errors.address.message}
                         </div>
                       )}
                     </label>
                   </div>
-                  <div className='mt-4  md:w-1/2'>
-                    <label htmlFor='address2'>
-                      <h5 className='text-gray-700'>Additional Address</h5>
-                      <input
-                        type='text'
-                        name='address2'
-                        id='address2'
-                        placeholder='Suite 123'
-                        ref={register}
-                        className='mt-1 p-2 block w-full border-gray-500 rounded border-2'
-                      />
-                      {errors.name && (
-                        <div className='msg-error'>
-                          {errors.address2.message}
-                        </div>
-                      )}
-                    </label>
-                  </div>
-                </div>
-                <div className='flex flex-col md:flex-row'>
-                  <div className='mt-4 md:mr-4 md:w-1/3'>
-                    <label htmlFor='city'>
-                      <h5 className='text-gray-700'>City</h5>
+                  <div className='mt-4 md:w-1/2'>
+                    <label htmlFor='city' className='text-gray-700'>
+                      City
                       <input
                         type='text'
                         name='city'
@@ -184,14 +209,16 @@ export default () => {
                         ref={register}
                         className='mt-1 p-2 block w-full border-gray-500 rounded border-2'
                       />
-                      {errors.name && (
+                      {errors.city && (
                         <div className='msg-error'>{errors.city.message}</div>
                       )}
                     </label>
                   </div>
-                  <div className='mt-4 md:mr-4 md:w-1/3'>
-                    <label htmlFor='state'>
-                      <h5 className='text-gray-700'>State</h5>
+                </div>
+                <div className='flex flex-col md:flex-row'>
+                  <div className='mt-4 md:mr-4 md:w-1/2'>
+                    <label htmlFor='state' className='text-gray-700'>
+                      State
                       <input
                         type='text'
                         name='state'
@@ -200,14 +227,14 @@ export default () => {
                         ref={register}
                         className='mt-1 p-2 block w-full border-gray-500 rounded border-2'
                       />
-                      {errors.name && (
+                      {errors.state && (
                         <div className='msg-error'>{errors.state.message}</div>
                       )}
                     </label>
                   </div>
-                  <div className='mt-4  md:w-1/3'>
-                    <label htmlFor='zip'>
-                      <h5 className='text-gray-700'>Zip Code</h5>
+                  <div className='mt-4  md:w-1/2'>
+                    <label htmlFor='zip' className='text-gray-700'>
+                      Zip Code
                       <input
                         type='text'
                         name='zip'
@@ -216,33 +243,17 @@ export default () => {
                         ref={register}
                         className='mt-1 p-2 block w-full border-gray-500 rounded border-2'
                       />
-                      {errors.name && (
+                      {errors.zip && (
                         <div className='msg-error'>{errors.zip.message}</div>
                       )}
                     </label>
                   </div>
                 </div>
-                <div className='mt-4'>
-                  <label htmlFor='email'>
-                    <h5 className='text-gray-700'>Email</h5>
-                    <input
-                      type='email'
-                      name='email'
-                      id='email'
-                      placeholder='your@email.address'
-                      ref={register}
-                      className='mt-1 p-2 block w-full border-gray-500 rounded border-2'
-                    />
-                    {errors.email && (
-                      <div className='msg-error'>{errors.email.message}</div>
-                    )}
-                  </label>
-                </div>
 
                 <div className='flex flex-col md:flex-row'>
                   <div className='mt-4 md:mr-4 md:w-1/2'>
-                    <label htmlFor='mod1desc'>
-                      <h5 className='text-gray-700'>Endoscope Model</h5>
+                    <label htmlFor='mod1desc' className='text-gray-700'>
+                      Endoscope Model
                       <input
                         type='text'
                         name='mod1'
@@ -251,14 +262,14 @@ export default () => {
                         ref={register}
                         className='mt-1 p-2 block w-full border-gray-500 rounded border-2'
                       />
-                      {errors.name && (
+                      {errors.mod1 && (
                         <div className='msg-error'>{errors.mod1.message}</div>
                       )}
                     </label>
                   </div>
                   <div className='mt-4  md:w-1/2'>
-                    <label htmlFor='mod1desc'>
-                      <h5 className='text-gray-700'>Description of Problem</h5>
+                    <label htmlFor='mod1desc' className='text-gray-700'>
+                      Description of Problem
                       <input
                         type='text'
                         name='mod1desc'
@@ -267,7 +278,7 @@ export default () => {
                         ref={register}
                         className='mt-1 p-2 block w-full border-gray-500 rounded border-2'
                       />
-                      {errors.name && (
+                      {errors.mod1desc && (
                         <div className='msg-error'>
                           {errors.mod1desc.message}
                         </div>
@@ -277,18 +288,18 @@ export default () => {
                 </div>
 
                 <div className='mt-4'>
-                  <label htmlFor='question'>
-                    <h5 className='text-gray-700'>Additional Information</h5>
+                  <label htmlFor='message1' className='text-gray-700'>
+                    Additional Information
                     <textarea
                       ref={register}
-                      name='question'
-                      id='question'
+                      name='message1'
+                      id='message1'
                       rows='3'
                       placeholder='Your message'
                       className='mt-1 p-2 block w-full border-gray-500 rounded border-2'
                     />
-                    {errors.question && (
-                      <div className='msg-error'>{errors.question.message}</div>
+                    {errors.message1 && (
+                      <div className='msg-error'>{errors.message1.message}</div>
                     )}
                   </label>
                 </div>
