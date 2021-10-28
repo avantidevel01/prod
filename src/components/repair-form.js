@@ -71,7 +71,7 @@ export default () => {
                   <div className='mt-4 md:mr-4 md:w-1/2'>
                     <label htmlFor='fname' className='text-gray-700'>
                       First Name
-                      <span className='text-xs italic text-gray-500 pl-1'>
+                      <span className='text-xs italic text-gray-600 pl-1'>
                         (Required)
                       </span>
                       <input
@@ -80,7 +80,7 @@ export default () => {
                         id='fname'
                         placeholder='First Name'
                         ref={register({ required: true, maxLength: 200 })}
-                        className='mt-1 p-2 block w-full border-gray-500 rounded border-2'
+                        className='mt-1 p-2 block w-full border-gray-600 rounded border-2'
                       />
                       {errors.fname && (
                         <p className='text-red-600 font-medium italic ml-2'>
@@ -92,7 +92,7 @@ export default () => {
                   <div className='mt-4  md:w-1/2'>
                     <label htmlFor='lname' className='text-gray-700 '>
                       Last Name
-                      <span className='text-xs italic text-gray-500 pl-1'>
+                      <span className='text-xs italic text-gray-600 pl-1'>
                         (Required)
                       </span>
                       <input
@@ -101,7 +101,7 @@ export default () => {
                         id='lname'
                         placeholder='Last Name'
                         ref={register({ required: true, maxLength: 200 })}
-                        className='mt-1 p-2 block w-full border-gray-500 rounded border-2'
+                        className='mt-1 p-2 block w-full border-gray-600 rounded border-2'
                       />
                       {errors.lname && (
                         <p className=' text-red-600 font-medium italic ml-2'>
@@ -116,7 +116,7 @@ export default () => {
                   <div className='mt-4 md:mr-4 md:w-1/2'>
                     <label htmlFor='email' className='text-gray-700'>
                       Email
-                      <span className='text-xs italic text-gray-500 pl-1'>
+                      <span className='text-xs italic text-gray-600 pl-1'>
                         (Required)
                       </span>
                       <input
@@ -252,7 +252,7 @@ export default () => {
 
                 <div className='flex flex-col md:flex-row'>
                   <div className='mt-4 md:mr-4 md:w-1/2'>
-                    <label htmlFor='mod1desc' className='text-gray-700'>
+                    <label htmlFor='mod1' className='text-gray-700'>
                       Endoscope Model
                       <input
                         type='text'

@@ -95,6 +95,7 @@ const Header = () => {
               <button
                 type='button'
                 className='mt-1 mr-4 focus:outline-none focus:border-gray-200'
+                aria-label='Open the menu'
               >
                 <FontAwesomeIcon
                   className='text-4xl block text-gray-700 hover:text-gray-600'
@@ -108,6 +109,7 @@ const Header = () => {
               <button
                 type='button'
                 className='mt-1 mr-4 focus:outline-none focus:border-gray-200'
+                aria-label='Close the menu'
               >
                 <FontAwesomeIcon
                   className='text-4xl fill-current block text-gray-700 hover:text-gray-600'
