@@ -63,7 +63,7 @@ const IndexPage = () => {
                   We sell refurbished.
                 </h1>
 
-                <h2 className='text-xl  font-bold  pt-3 pb-4 pr-4 text-gray-700 leading-tight'>
+                <h2 className='text-xl  font-bold  pt-3 pb-4 md:pr-4 text-gray-700 leading-tight'>
                   3 West Medical is your #1 source for endoscope repair,
                   refurbished endoscopes, and complementary equipment in Los
                   Angeles.
