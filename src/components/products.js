@@ -26,12 +26,12 @@ const Highlights = () => {
     <div>
       <div className="">
         <h2 className="text-2xl font-bold pb-2 text-gray-800 leading-tight ">
-          Refurbrished Endoscopes
+          Certified Pre-Owned Endoscopes
         </h2>
         <p className="text-gray-700 leading-normal text-lg mb-2 py-2">
-          We carry an extensive inventory of certified pre-owned rigid and
+          We have an extensive inventory of certified pre-owned rigid and
           flexible endoscopes including the most current and up to date
-          technology. All endoscopes are 100% guaranteed.
+          technology available for sale. All endoscopes are 100% guaranteed.
         </p>
         <div className=" w-full justify-center">
           <div className="bg-gray-100 md:mx-6 mb-6 p-4 border-2 border-blue-800 border-solid rounded-md shadow-lg">

@@ -56,7 +56,7 @@ const Highlights = () => {
   return (
     <div>
       <h2 className="text-2xl font-bold pb-6 text-gray-800 leading-tight ">
-        Complementary Products and Equipment
+        Integrative Devices
       </h2>
       <div className="bg-gray-100 md:mx-6 mb-6 p-4 border-2 border-blue-800 border-solid rounded-md shadow-lg">
         <h2 className="text-xl font-bold mb-5 text-gray-800 leading-tight">
@@ -133,31 +133,31 @@ const Highlights = () => {
           </div>
         </div>
       </div>
-
-      <div className="bg-gray-100 md:mx-6 mb-6 p-4 border-2 border-blue-800 border-solid rounded-md shadow-lg">
+      <div className="bg-gray-100 md:mx-6 mb-6 p-4 border-2 border-blue-800 border-solid rounded-md shadow-lg ">
         <h2 className="text-xl font-bold mb-5 text-gray-800 leading-tight">
-          MedBios Micronebulizer by AMILcare
+          SteriView Inspection System
         </h2>
         <div className="flex flex-col md:flex-row w-auto m-3">
           <div className="mr-8 md:w-1/3">
             <Img
               className="md:mr-4 rounded-lg"
-              fluid={data.medbios.childImageSharp.fluid}
-              alt="AmilCare MedBios Micronebulizer"
+              fluid={data.steriview.childImageSharp.fluid}
+              alt="EnSURE Touch by Hygiena"
             />
           </div>
           <div className="md:w-2/3">
             <p className="text-gray-800 leading-normal text-lg my-2 py-2">
-              The Medbios device is a micronebulizer of new generation,
-              practical, manageable, and technologically advanced for
-              biodisinfection. It is a class I Medical Device. It was designed
-              for use in various hospital departments. All configuration
-              settings for treatments are performed with a display and keyboard.
+              SteriView™ Inspection System is designed to inspect the internal
+              channels of endoscopes and surgical devices to assist in the
+              visualization of any soiled, wet, or damaged areas that the eye
+              can’t see. The internal channels are an ideal environment for
+              colonization of bacteria. It is for this reason, SGNA, AAMI, AORN
+              and manufacturers IFU’s all state that scopes must be inspected
+              prior to use.
             </p>
           </div>
         </div>
       </div>
-
       <div className=" w-full justify-center">
         <div className="bg-gray-100 md:mx-6 mb-6 p-4 border-2 border-blue-800 border-solid rounded-md shadow-lg">
           <h2 className="text-xl font-bold mb-5 text-gray-800 leading-tight">
@@ -181,29 +181,27 @@ const Highlights = () => {
             </div>
           </div>
         </div>
-        <div className="bg-gray-100 md:mx-6 mb-6 p-4 border-2 border-blue-800 border-solid rounded-md shadow-lg ">
-          <h2 className="text-xl font-bold mb-5 text-gray-800 leading-tight">
-            SteriView Inspection System
-          </h2>
-          <div className="flex flex-col md:flex-row w-auto m-3">
-            <div className="mr-8 md:w-1/3">
-              <Img
-                className="md:mr-4 rounded-lg"
-                fluid={data.steriview.childImageSharp.fluid}
-                alt="EnSURE Touch by Hygiena"
-              />
-            </div>
-            <div className="md:w-2/3">
-              <p className="text-gray-800 leading-normal text-lg my-2 py-2">
-                SteriView™ Inspection System is designed to inspect the internal
-                channels of endoscopes and surgical devices to assist in the
-                visualization of any soiled, wet, or damaged areas that the eye
-                can’t see. The internal channels are an ideal environment for
-                colonization of bacteria. It is for this reason, SGNA, AAMI,
-                AORN and manufacturers IFU’s all state that scopes must be
-                inspected prior to use.
-              </p>
-            </div>
+      </div>
+      <div className="bg-gray-100 md:mx-6 mb-6 p-4 border-2 border-blue-800 border-solid rounded-md shadow-lg">
+        <h2 className="text-xl font-bold mb-5 text-gray-800 leading-tight">
+          MediBios Micronebulizer by AMILcare
+        </h2>
+        <div className="flex flex-col md:flex-row w-auto m-3">
+          <div className="mr-8 md:w-1/3">
+            <Img
+              className="md:mr-4 rounded-lg"
+              fluid={data.medbios.childImageSharp.fluid}
+              alt="AmilCare MedBios Micronebulizer"
+            />
+          </div>
+          <div className="md:w-2/3">
+            <p className="text-gray-800 leading-normal text-lg my-2 py-2">
+              The MediBios device is a micronebulizer of new generation,
+              practical, manageable, and technologically advanced for
+              biodisinfection. It is a class I Medical Device. It was designed
+              for use in various hospital departments. All configuration
+              settings for treatments are performed with a display and keyboard.
+            </p>
           </div>
         </div>
       </div>

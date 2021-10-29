@@ -62,9 +62,9 @@ const IndexPage = () => {
                 </h1>
 
                 <h2 className="text-xl  font-bold  pt-3 pb-4 md:pr-4 text-gray-700 leading-tight">
-                  3 West Medical is your #1 source for endoscope repair,
-                  refurbished endoscopes, and complementary equipment in Los
-                  Angeles.
+                  3 West Medical is your #1 source for endoscope repairs,
+                  pre-owned endoscopes, and integrative devices in Los Angeles
+                  County.
                 </h2>
 
                 <p className="py-2  text-gray-700 leading-normal font-bold text-lg">
