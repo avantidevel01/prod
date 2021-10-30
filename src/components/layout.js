@@ -7,7 +7,10 @@ const Layout = ({ children }) => {
   return (
     <div className="bg-gray-100">
       <Header />
-      <div className="bg-gray-100 py-6">
+      <div
+        className="bg-gray-100 py-6"
+        style={{ margin: `0 auto`, maxWidth: 1024 }}
+      >
         <div className="max-w-screen-md lg:max-w-screen-lg mx-auto">
           {children}
         </div>
