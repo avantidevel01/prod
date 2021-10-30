@@ -71,7 +71,7 @@ export default () => {
                   <div className="mt-4 md:mr-4 md:w-1/2">
                     <label htmlFor="fname" className="text-gray-700">
                       First Name
-                      <span className="text-xs italic text-gray-600 pl-1">
+                      <span className="text-xs italic text-gray-700 pl-1">
                         (Required)
                       </span>
                       <input
@@ -92,7 +92,7 @@ export default () => {
                   <div className="mt-4  md:w-1/2">
                     <label htmlFor="lname" className="text-gray-700 ">
                       Last Name
-                      <span className="text-xs italic text-gray-600 pl-1">
+                      <span className="text-xs italic text-gray-700 pl-1">
                         (Required)
                       </span>
                       <input
@@ -116,7 +116,7 @@ export default () => {
                   <div className="mt-4 md:mr-4 md:w-1/2">
                     <label htmlFor="email" className="text-gray-700">
                       Email
-                      <span className="text-xs italic text-gray-600 pl-1">
+                      <span className="text-xs italic text-gray-700 pl-1">
                         (Required)
                       </span>
                       <input
@@ -140,7 +140,7 @@ export default () => {
                   <div className="mt-4  md:w-1/2">
                     <label htmlFor="phone" className="text-gray-700">
                       Phone Number
-                      <span className="text-xs italic text-gray-600 pl-1">
+                      <span className="text-xs italic text-gray-700 pl-1">
                         (Required)
                       </span>
                       <input
