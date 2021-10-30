@@ -11,7 +11,7 @@ const ProductsPage = () => {
         <SEO title="Refurbished Flexible and Rigid Endoscopes for Sale" />
         <main>
           <div className="px-6">
-            <h1 className="text-3xl font-bold py-4 text-gray-900 leading-normal">
+            <h1 className="text-3xl font-bold py-4 text-blue-800 leading-normal">
               Flexible Endoscopes,{" "}
               <span className="whitespace-nowrap">Rigid Endoscopes</span> &
               <span className="whitespace-nowrap"> Integrative Devices</span>

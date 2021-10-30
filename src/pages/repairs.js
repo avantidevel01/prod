@@ -30,12 +30,12 @@ const RepairsPage = () => {
             />
           </div>
           <div className="px-4 md:px-6">
-            <h1 className="text-3xl font-bold mt-8 py-2 text-gray-900 leading-normal">
+            <h1 className="text-3xl font-bold mt-8 py-2 text-blue-800 leading-normal">
               Flexible and Rigid{" "}
               <span className="whitespace-nowrap"> Endoscope Repairs</span>
             </h1>
 
-            <h2 className="text-xl font-semibold py-2 mb-4 text-blue-800 leading-normal">
+            <h2 className="text-xl font-semibold py-2 mb-4 text-gray-900 leading-normal">
               All repairs are performed by our technicians at our
               state-of-the-art repair lab
             </h2>

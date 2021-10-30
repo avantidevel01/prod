@@ -1,43 +1,33 @@
-const path = require('path')
+const path = require("path")
 
 module.exports = {
   siteMetadata: {
-    title: '3 West Medical',
-    author: '3 West Medical',
-    siteUrl: 'https://3westmedical.com',
+    title: "3 West Medical",
+    author: "3 West Medical",
+    siteUrl: "https://3westmedical.com",
     keywords:
-      'Endoscpe Repairs, Rigid Endoscopes, Flexible Endoscopes, Endoscopy Equipment',
+      "Endoscpe Repairs, Rigid Endoscopes, Flexible Endoscopes, Endoscopy Equipment",
     description:
-      'Specializing in Endoscope Repair and Refurbished Endoscope Sales in the Area of Los Angeles.',
+      "Specializing in Endoscope Repair and Refurbished Endoscope Sales in the Area of Los Angeles.",
   },
   plugins: [
     `gatsby-plugin-postcss`,
 
     {
-      resolve: 'gatsby-plugin-google-analytics',
+      resolve: "gatsby-plugin-google-analytics",
       options: {
-        trackingId: 'UA-32238302-1',
+        trackingId: "UA-32238302-1",
       },
     },
     {
       resolve: `gatsby-plugin-robots-txt`,
       options: {
-        host: 'https://3westmedical.com',
-        sitemap: 'https://3westmedical.com/sitemap.xml',
-        policy: [{ userAgent: '*', allow: '/' }],
+        host: "https://3westmedical.com",
+        sitemap: "https://3westmedical.com/sitemap.xml",
+        policy: [{ userAgent: "*", allow: "/" }],
       },
     },
-    {
-      resolve: `gatsby-plugin-sharp`,
-      options: {
-        base64Width: 20,
-        forceBase64Format: `png`,
-        useMozJpeg: process.env.GATSBY_JPEG_ENCODER === `MOZJPEG`,
-        stripMetadata: true,
-        defaultQuality: 70,
-        failOnError: true,
-      },
-    },
+
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sitemap`,
     {
@@ -55,18 +45,18 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: 'images',
-        path: './src/images/',
+        name: "images",
+        path: "./src/images/",
       },
-      __key: 'images',
+      __key: "images",
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: 'pages',
-        path: './src/pages/',
+        name: "pages",
+        path: "./src/pages/",
       },
-      __key: 'pages',
+      __key: "pages",
     },
   ],
 }
