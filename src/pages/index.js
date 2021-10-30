@@ -10,7 +10,7 @@ const IndexPage = () => {
     query {
       endoScope1: file(relativePath: { eq: "s4.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 650) {
+          fluid(maxWidth: 720, quality: 50) {
             ...GatsbyImageSharpFluid
           }
         }
