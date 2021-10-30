@@ -53,6 +53,7 @@ const IndexPage = () => {
                     className="lg:hidden h-40 w-full object-cover object-center md:h-full  rounded-md shadow-lg"
                     fluid={data.endoScope1.childImageSharp.fluid}
                     alt="Flexible Endoscope"
+                    loading="eager"
                   />
                 </div>
                 <h1 className="text-3xl font-bold mt-2 py-4 text-gray-900 leading-normal">
