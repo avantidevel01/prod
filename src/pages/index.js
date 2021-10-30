@@ -8,7 +8,7 @@ import Img from "gatsby-image"
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
     query {
-      endoScope1: file(relativePath: { eq: "s4.jpg" }) {
+      endoScope1: file(relativePath: { eq: "endoscope-repair-3west.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 720, quality: 50) {
             ...GatsbyImageSharpFluid
@@ -105,6 +105,7 @@ const IndexPage = () => {
                     className="h-full w-full object-cover object-right rounded-md shadow-lg"
                     fluid={data.endoScope1.childImageSharp.fluid}
                     alt="Flexible Endoscope"
+                    loading="eager"
                   />
                 </div>
               </div>
