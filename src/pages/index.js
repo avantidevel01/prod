@@ -75,7 +75,7 @@ const IndexPage = () => {
                 <div className="">
                   <div className="md:flex md:justify-center lg:mr-6 ">
                     <div className="mx-2 my-6 md:w-1/3">
-                      <Link className="" to="/repair">
+                      <Link className="" to="/repairs">
                         <div className="block md:text-xl text-lg text-center hover:bg-blue-700 shadow-lg text-white  px-4 py-3 rounded-md bg-blue-800 font-medium uppercase tracking-wide w-full active:bg-blue-900">
                           Repair
                         </div>

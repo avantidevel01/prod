@@ -32,7 +32,7 @@ const Header = () => {
 
         <Link
           className="uppercase mt-1 block px-2 py-1 text-gray-800  font-semibold rounded hover:text-gray-100 hover:bg-blue-800"
-          to="/repair"
+          to="/repairs"
         >
           Repairs
         </Link>
@@ -79,7 +79,7 @@ const Header = () => {
             </Link>
 
             <Link
-              to="/repair"
+              to="/repairs"
               className="w-1/4 pt-2 mx-1  mt-10 h-10  align-center text-blue-800 rounded hover:bg-blue-800"
             >
               <div className="uppercase text-lg text-center text-blue-800  font-semibold  hover:text-gray-100 ">
