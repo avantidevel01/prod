@@ -7,7 +7,7 @@ export default () => {
 
   const onSubmit = async data => {
     try {
-      await fetch(`${process.env.GA_GATEWAY_URL}`, {
+      await fetch(`${process.env.GATSBY_GATEWAY_URL}`, {
         method: "POST",
         mode: "cors",
         cache: "no-cache",
