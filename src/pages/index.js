@@ -60,13 +60,22 @@ const IndexPage = () => {
                   <span className="text-blue-800 text-4xl">
                     We repair endoscopes.
                   </span>
+                  <br />
+                  <span className="text-gray-500 text-3xl">
+                    But that's not all we do.
+                  </span>
                 </h1>
 
                 <h2 className="text-xl  font-bold  pt-3 pb-4 md:pr-4 text-gray-700 leading-tight">
-                  3 West Medical is your #1 source for endoscope repairs,
-                  pre-owned endoscopes, and integrative devices in Los Angeles
-                  County.
+                  3 West Medical is your #1 source for repairing and selling
+                  flexible and rigid endoscopes and we carry a comprehensive
+                  line of innovative devices to help you run your department
+                  more efficiently.
                 </h2>
+                <div className="py-2  text-gray-700 leading-normal font-bold text-lg">
+                  We do it right the first time, so you can get back to things
+                  that matter most, such as patient care.
+                </div>
 
                 <p className="py-2  text-gray-700 leading-normal font-bold text-lg">
                   100% Satisfaction Guaranteed.
