@@ -14,6 +14,13 @@ const Highlights = () => {
           }
         }
       }
+      blackeye: file(relativePath: { eq: "black-eye-marker.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 400) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
       dry1: file(relativePath: { eq: "jet-stream-dry-scope.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 400) {
@@ -58,6 +65,39 @@ const Highlights = () => {
       <h2 className="text-2xl font-bold pb-6 text-gray-800 leading-tight ">
         Integrative Devices
       </h2>
+      <div className="bg-gray-100 md:mx-6 mb-6 p-4 border-2 border-blue-800 border-solid rounded-md shadow-lg">
+        <h2 className="text-xl font-bold mb-5 text-gray-800 leading-tight">
+          Black Eye Endoscopic Marker
+        </h2>
+        <div className="flex flex-col md:flex-row w-auto m-3">
+          <div className="mr-8 md:w-1/3">
+            <Img
+              className="md:mr-4 rounded-lg"
+              fluid={data.blackeye.childImageSharp.fluid}
+              alt="Black Eye Endoscopic Marker - 5ml syringe box of 10"
+            />
+          </div>
+          <div className="md:w-2/3">
+            <p className="text-gray-800 leading-normal text-lg my-2 py-2">
+              Keep an eye on that lesion. Black Eye™ is indicated for
+              permanently marking lesions in the GI tract. "No shake" necessary.
+              Easier, faster, safer! Black Eye™ proprietary formula provides
+              stable emulsion and suspension. It is more viscous and does not
+              migrate like other tattoo products; Resulting in consistently
+              dark, permanent marks.
+              <p>
+                SAFE - Used in over 50 countries since 2013. Blister packaging
+                acts as a barrier and protects against cross-contamination.
+              </p>
+              <p>
+                PERMANENT - Black Eye™ leaves a permanent mark, as carbon black
+                is a stable and safe pigment. Resulting in a "Lifetime of
+                Surveillance".
+              </p>
+            </p>
+          </div>
+        </div>
+      </div>
       <div className="bg-gray-100 md:mx-6 mb-6 p-4 border-2 border-blue-800 border-solid rounded-md shadow-lg">
         <h2 className="text-xl font-bold mb-5 text-gray-800 leading-tight">
           Dry-Scope Aid® Jet~Stream
