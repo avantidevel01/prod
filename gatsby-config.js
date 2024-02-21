@@ -38,7 +38,6 @@ module.exports = {
         short_name: `3 West`,
         start_url: `/`,
         lang: `en`,
-        icon: `./src/images/icon.png`,
       },
     },
     `gatsby-transformer-sharp`,
